@@ -54,3 +54,155 @@ body{
     font-weight: 500;
     line-height: normal;
 }
+
+.input-container{
+    width: 1000px;
+    height: 265px;
+    flex-shrink: 0;
+
+    border-radius: 15px;
+    background: #000;
+    border: 2px solid #FFF;
+
+    margin-bottom: 40px;
+}
+
+.input-container h2, .task-list h2{
+    display: flex;
+    width: 203px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Glock Grotesque TRIAL;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    padding-top: 45px;
+    padding-left: 40px;
+}
+
+.input-container input{
+    width: 500px;
+    height: 30px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background: #000;
+    color: #fff;
+
+    margin-left: 85px;
+}
+
+.input-container button{
+    width: 209px;
+    height: 30px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background: #000;
+    color: #fff;
+
+    margin-left: 55px;
+}
+
+.task-list{
+    width: 1000px;
+    height: auto;
+    flex-shrink: 0;
+
+    border-radius: 15px;
+    background: #000;
+    border: 2px solid #FFF;
+}
+
+/* ________________________________________________________________ */
+
+
+input[type="checkbox"] {
+    margin-right: 100px; 
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #000;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 65px;
+    margin-bottom: 60px;
+    color: #fff;border-radius: 5px;
+    border: 2px solid #FFF;
+    background: #000;
+   
+    cursor: pointer;
+}
+
+
+.save-button {
+    width: 70px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+
+button.remove-button {
+    width: 100px;
+    height: 30px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background: #000;
+}
+
+
+#removeCompleted,
+#removeAll {
+    background: #000;
+    width: 300px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 2px solid #FFF;
+
+}
+
+input::before{
+    width: 500px;
+    height: 50px;
+    flex-shrink: 0;
+
+    /* border-radius: 5px; */
+    border: none;
+    background: none;
+    color: none;
+}
+
+
+
+/* ________________________________________________________________________________ */
+#tasks ul{
+    text-decoration: none;
+}
+
+#tasks li{
+    width: 600px;
+    height: 50px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background: #000;
+    color: #fff;
+}
+
