@@ -4,29 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
     <title>Home</title>
 </head>
-<body>
-    <div class="container">
-        <div class="container-welcome">
-            <h1>welcome, <span>user</span>!</h1>
-        </div>
-        <div class="input-container">
-            <h2>my task</h2>
-                <input type="text" id="taskInput" placeholder="my to-do is">
-                <button id="addTask">add</button>
-        </div>
-        <div class="task-list">
-            <h2>my list</h2>
-            <ul id="tasks"></ul>
-            
-            <div class="actions">
-                <button id="removeCompleted">remove completed</button>
-                <button id="removeAll">clear the list</button>
-            </div>
-        </div>
-    </div>
-    
+<body onload="loadTasks()">
+    <main id="task-manager">
+        <form id="task-form" onsubmit="addTaskAlert(); return false;">
+            <input type="text" id="new-task" placeholder="my task is.." required>
+            <input type="file" id="new-image" accept="image/*">
+            <button type="submit">Add Task</button>
+        </form>
+        <button class="remove-completed" onclick="removeCompletedTasks()">remove tompleted Tasks</button>
+        <button class="remove-all" onclick="removeAllTasks()">remove all tasks</button>
+        <button class="sort-asc" onclick="sortTasksAsc()">sort asc</button>
+        <button class="sort-desc" onclick="sortTasksDesc()">sort desc</button>
+        <button class="clear-storage" onclick="clearStorage()">Clear Storage</button>
+        <button class="pick-task" onclick="pickTask()">pick task</button>
+        <ul class="task-list"></ul>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
